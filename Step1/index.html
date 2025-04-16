@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blindfold Chess Trainer - Step 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Blindfold Chess Trainer - Step 1</h1>
+
+  <div class="board-container">
+    <div id="board" class="board"></div>
+  </div>
+
+  <div class="controls">
+    <button id="startBtn">Start</button>
+  </div>
+
+  <div class="selection-panel">
+    <h3>Select File (a–h)</h3>
+    <div class="files">
+      <button class="fileBtn" data-file="a">a</button>
+      <button class="fileBtn" data-file="b">b</button>
+      <button class="fileBtn" data-file="c">c</button>
+      <button class="fileBtn" data-file="d">d</button>
+      <button class="fileBtn" data-file="e">e</button>
+      <button class="fileBtn" data-file="f">f</button>
+      <button class="fileBtn" data-file="g">g</button>
+      <button class="fileBtn" data-file="h">h</button>
+    </div>
+
+    <h3>Select Rank (1–8)</h3>
+    <div class="ranks">
+      <button class="rankBtn" data-rank="1">1</button>
+      <button class="rankBtn" data-rank="2">2</button>
+      <button class="rankBtn" data-rank="3">3</button>
+      <button class="rankBtn" data-rank="4">4</button>
+      <button class="rankBtn" data-rank="5">5</button>
+      <button class="rankBtn" data-rank="6">6</button>
+      <button class="rankBtn" data-rank="7">7</button>
+      <button class="rankBtn" data-rank="8">8</button>
+    </div>
+
+    <h3>Select Color</h3>
+    <div class="colors">
+      <button class="colorBtn" data-color="light">Light</button>
+      <button class="colorBtn" data-color="dark">Dark</button>
+    </div>
+  </div>
+
+  <p id="status">Click Start to begin</p>
+  <p>Score: <span id="score">0</span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
