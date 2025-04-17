@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f4f4f8;
+  color: #222;
+}
+
+.info {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #333;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.highlight {
+  background-color: yellow !important;
+}
+
+.path {
+  background-color: lightblue !important;
+}
+
+.files, .ranks {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #999;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #eee;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+}

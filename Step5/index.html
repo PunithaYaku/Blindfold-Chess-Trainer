@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blindfold Chess - Step 5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Step 5: Blindfold Knight Challenge</h1>
+
+  <div class="info">
+    <p>Start: <strong id="startSquare">?</strong> → Target: <strong id="targetSquare">?</strong></p>
+    <p>No board. Think like a knight. Max 20 moves allowed.</p>
+  </div>
+
+  <div class="selectors">
+    <h3>Select File</h3>
+    <div class="files">
+      <button class="fileBtn" data-file="a">a</button>
+      <button class="fileBtn" data-file="b">b</button>
+      <button class="fileBtn" data-file="c">c</button>
+      <button class="fileBtn" data-file="d">d</button>
+      <button class="fileBtn" data-file="e">e</button>
+      <button class="fileBtn" data-file="f">f</button>
+      <button class="fileBtn" data-file="g">g</button>
+      <button class="fileBtn" data-file="h">h</button>
+    </div>
+
+    <h3>Select Rank</h3>
+    <div class="ranks">
+      <button class="rankBtn" data-rank="1">1</button>
+      <button class="rankBtn" data-rank="2">2</button>
+      <button class="rankBtn" data-rank="3">3</button>
+      <button class="rankBtn" data-rank="4">4</button>
+      <button class="rankBtn" data-rank="5">5</button>
+      <button class="rankBtn" data-rank="6">6</button>
+      <button class="rankBtn" data-rank="7">7</button>
+      <button class="rankBtn" data-rank="8">8</button>
+    </div>
+
+    <h3>Controls</h3>
+    <button id="resetBtn">Reset</button>
+    <button id="startBtn">Start</button>
+  </div>
+
+  <p id="status">Press Start to begin</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
